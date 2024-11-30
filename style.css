@@ -1,0 +1,99 @@
+
+  .carousel-item {
+    transition: transform 1s ease-in-out; /* Suavidade na troca */
+  }
+  .carousel-item  {
+    object-fit: cover;
+
+  }
+  .carousel-inner {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+  .navbar{
+    background-color: #255378;
+  }
+  #navbar-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Conteúdo */
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.navbar-toggler {
+  background-color: #7e57c2; /* Cor de fundo do botão */
+  border-color: #7e57c2; /* Cor da borda do botão */
+  transition: background-color 0.3s ease; /* Animação de transição */
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%2878, 57, 194, 0.5%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  transition: transform 0.3s ease; /* Animação de transição */
+}
+
+.navbar-toggler.collapsed .navbar-toggler-icon {
+  transform: rotate(0deg); /* Ícone padrão */
+}
+
+.navbar-toggler:not(.collapsed) .navbar-toggler-icon {
+  transform: rotate(90deg); /* Ícone rotacionado quando expandido */
+}
+
+/* Animação para o menu */
+.collapse {
+  transition: height 0.3s ease;
+  overflow: hidden; /* Garantir que o conteúdo não transborde */
+}
+
+
+
+
+@font-face {
+    font-family: 'Quicksand_Bold';
+    src: url('Quicksand_Bold.otf') format('opentype');
+}
+
+.navbar .navbar-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar .navbar-nav  .nav-link {
+    justify-content: center;
+    font-family: 'Quicksand_Bold', sans-serif;
+    color: #ffffff !important;
+    cursor: pointer;
+    background-image: linear-gradient(to right, #f9f7fc 0%, #f9f7fc 100%);
+    background-position: 50% 100%;
+    background-size: 0% 2px; /* Diminuir a altura da linha */
+    background-repeat: no-repeat;
+    transition: background-size 0.3s, background-position 0.3s; /* Animação suave */
+}
+
+.navbar .navbar-nav .nav-link:hover {
+    color: #979797cc !important;
+    background-size: 60% 3px; /* Aumentar a largura da linha ao passar o mouse */
+    background-position: 50% 100%;
+}
+
+.navbar .navbar-nav .nav-link i {
+    color: #ffffff !important; /* Cor dos ícones de fonte */
+}
+
+.navbar .navbar-nav .nav-link svg {
+    color: #ffffff !important; /* Cor dos ícones SVG */
+}
+
+.navbar .navbar-nav .nav-link img {
+    filter: brightness(0) invert(1); /* Ajusta a cor das imagens */
+}
