@@ -3,6 +3,9 @@
   flex-wrap: wrap;
   gap: 20px;
 }
+html, body {
+  overflow-x: hidden; /* Impede o movimento lateral */
+}
 
 .image-container {
   flex: 1 1 300px; /* Define o tamanho mínimo e ajusta a largura automaticamente */
